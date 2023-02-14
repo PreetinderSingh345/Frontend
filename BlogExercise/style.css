@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    font-family: sans-serif;
+    min-width: 425px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 100px;
+    min-height: 90px;
+}
+
+#website-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#main-heading {
+    margin: 10px 0 5px 0;
+    font-size: x-large;
+}
+
+#sub-heading {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#website-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#website-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    font-weight: lighter;
+}
+
+main {
+    height: 83vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 0 100px;
+    min-height: 500px;
+}
+
+.card-item {
+    border: 1px solid lightslategrey;
+    width: 25vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.card-img {
+    
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:  7px;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: lightslategrey;
+    word-spacing: 2px;
+}
+
+.img-title {
+    font-size: large;
+    margin-bottom: 0;
+    color: rgb(44, 44, 44)
+}
+
+.img-description {
+    font-size: small;
+    color: lightslategrey;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.card-description hr {
+    margin: 10px 5px;
+}
+
+.clap-heart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clap-and-count {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: grey;
+}
+
+.clap-heart img {
+    height: 25px;
+    width: 25px;
+    margin-right: 2px;
+    stroke: white;
+}
+
+.clap-heart svg {
+    stroke: white;
+}
+
+footer {
+    border: 1px solid black;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 100px;
+    font-weight: lighter;
+    min-height: 60px;
+}
+
+@media screen and (max-width: 725px) {
+    main {
+        justify-content: space-around;
+    }
+
+    header {
+        padding: 0 50px;
+    }
+
+    footer {
+        padding: 0 50px;
+    }
+
+    .card-item {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    main {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    footer {
+        padding: 0 50px;
+    }
+
+    #website-links {
+        width: 100%;
+    }
+}

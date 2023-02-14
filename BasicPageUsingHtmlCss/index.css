@@ -1,8 +1,15 @@
 body {
     margin: 0;
-    width: 100vw;
+    width: 100vw;   
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 header {
@@ -58,6 +65,7 @@ nav {
     height: 100%;
     width: 30%;
     background-color: rgb(244, 244, 244);
+    overflow: scroll;
 }
 
 #right-content-div {
@@ -72,17 +80,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    margin: 10px;
+    padding: 10px;
 }
 
 .right-div-box img {
     height: 10vh;
     width: 100%;
-}
-
-#left-content-div {
-    overflow: scroll;
-}
+} 
 
 #left-content-div img {
     height: 10vh;
