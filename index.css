@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    background-color:rgb(97, 226, 183);
+    color:white;
+}
+
+main {
+    height: 70vh;
+    margin:0
+}
+
+footer {
+    height: 10vh;
+    margin:0;
+    background-color: rgb(224, 224, 224);
+    color:black;
+}
+
+nav {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+}
+
+#link-span {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#link-span a {
+    color:white;
+    text-decoration: none;
+}
+
+#content-div {
+    border: 1px solid black;
+    display: flex;
+    height:95%;
+}
+
+#left-content-div {
+    height: 100%;
+    width: 30%;
+    background-color: rgb(244, 244, 244);
+}
+
+#right-content-div {
+    height: 100%;
+    width: 70%;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255);
+}
+
+.right-div-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin: 10px;
+}
+
+.right-div-box img {
+    height: 10vh;
+    width: 100%;
+}
+
+#left-content-div {
+    overflow: scroll;
+}
+
+#left-content-div img {
+    height: 10vh;
+    width: 91%;
+}
+
+#left-content-div-img-section img {
+    height: 5vh;
+}
+
+#left-content-div h3{
+    margin: 10px;
+}
+
+#left-content-div span{
+    margin: 10px;
+}
+
+#left-content-div img{
+    margin: 10px;
+}
+
+#left-content-div p{
+    margin: 10px;
+}
+
+#left-content-div h4{
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
