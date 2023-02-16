@@ -66,10 +66,6 @@ main {
     margin: 20px 0;
 }
 
-.card-img {
-    
-}
-
 .card-description {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,7 @@
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: lightslategrey;
+    word-spacing: 2px;
+}
