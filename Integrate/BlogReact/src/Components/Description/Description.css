@@ -1,0 +1,16 @@
+.img-title {
+  font-size: large;
+  margin-bottom: 0;
+  color: rgb(44, 44, 44);
+}
+
+.img-description {
+  font-size: small;
+  color: lightslategrey;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.card-description hr {
+  margin: 10px 5px;
+}
