@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import './Image.css';
 
 function Image({ imgName }) {
-  const img = require(`../../assets/${imgName}`);
-
-  return <img className="card-img" src={img} alt="" />;
+  return <img className="card-img" src={imgName} alt="" />;
 }
 
 Image.propTypes = {

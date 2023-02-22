@@ -10,12 +10,14 @@ function Main({ blogs }) {
       {blogs.map((blog) => (
         <Blog
           key={uuidv4()}
-          imgName={blog.imgName}
+          id={blog.id}
+          imgName={blog.image}
           date={blog.date}
-          time={blog.time}
+          time={blog.readingTime ?? '1 min'}
           title={blog.title}
           description={blog.description}
-          initialClapCount={blog.initialClapCount}
+          initialClapCount={blog.claps}
+          initialLiked={blog.liked}
         />
       ))}
     </main>
@@ -25,12 +27,14 @@ function Main({ blogs }) {
 Main.propTypes = {
   blogs: PropTypes.arrayOf(
     PropTypes.shape({
-      imgName: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
-      time: PropTypes.string.isRequired,
+      readingTime: PropTypes.string,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      initialClapCount: PropTypes.number.isRequired,
+      claps: PropTypes.number.isRequired,
+      liked: PropTypes.bool.isRequired
     })
   ).isRequired,
 };

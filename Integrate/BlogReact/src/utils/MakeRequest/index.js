@@ -1,16 +1,17 @@
 import axios from 'axios';
-import { BACKEND_URLS } from '../../constants/apiEndPoints';
+import { BACKEND_URL } from '../../constants/apiEndPoints';
 
-const makeRequest = async(apiEndPoint, dynamicConfig = {}) => {
+const makeRequest = async (apiEndPoint, dynamicConfig = {}) => {
   const requestDetails = {
-    ...apiEndPoint,
-    url: `${BACKEND_URLS}${apiEndPoint.url}`,
-    ...dynamicConfig
+    baseURL: BACKEND_URL,
+    url: apiEndPoint.url,
+    method: apiEndPoint.method,
+    ...dynamicConfig,
   };
 
-  const {data} = await axios(requestDetails);
+  const { data } = await axios(requestDetails);
 
   return data;
 };
 
-module.exports = makeRequest;
+export default makeRequest;
