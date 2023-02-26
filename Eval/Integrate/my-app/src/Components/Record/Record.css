@@ -1,0 +1,67 @@
+.record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfdfdf;
+  width: 300px;
+  border-radius: 25px;
+  font-family: sans-serif;
+}
+
+.record-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: #ababab;
+}
+
+.record-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.record-name-author {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.record-name {
+  font-size: x-large;
+  font-weight: lighter;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.record-author {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.like-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.like-count img {
+}
+
+.like-count span {
+  position: absolute;
+  color: white;
+}
+
+/* change record width */
+
+@media only screen and (max-width: 1200px) {
+  .record {
+    width: 80%;
+  }
+}

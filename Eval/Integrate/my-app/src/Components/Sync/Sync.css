@@ -1,0 +1,27 @@
+#sync {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+#sync span {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: xx-large;
+  color: gray;
+}
+
+#sync button {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  background-color: #4c63aa;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 50px;
+  margin: 20px 0;
+  cursor: pointer;
+}
