@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<DocumentFragment>
+  <header
+    data-testid="header"
+  >
+    My 
+    <span
+      id="record-heading"
+    >
+      Record
+    </span>
+     Shelf
+  </header>
+  <main
+    data-testid="sync"
+    id="sync"
+  >
+    <span>
+      :((
+    </span>
+    <span>
+      seems a bit empty in here...
+    </span>
+    <button
+      data-testid="sync-button"
+    >
+      sync
+    </button>
+  </main>
+</DocumentFragment>
+`;

@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <header>
+    <header data-testid='header'>
       My <span id="record-heading">Record</span> Shelf
     </header>
   );

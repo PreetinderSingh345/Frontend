@@ -48,7 +48,7 @@ function Records() {
   }
 
   return (
-    <main id="records" data-testid='records'>
+    <main id="records" data-testid="records">
       {records ? (
         <>
           <div id="records-heading">
@@ -58,14 +58,18 @@ function Records() {
               src={grouped ? iconGrid : iconGenre}
               alt=""
               onClick={handleGrouped}
-              data-testid='grouped-icon'
+              data-testid="grouped-icon"
             />
           </div>
 
           {grouped && (
             <div id="genres">
               {categories.map((category, index) => (
-                <div className="genre" onClick={handleCategory} data-testid={category}>
+                <div
+                  className="genre"
+                  onClick={handleCategory}
+                  data-testid={category}
+                >
                   <img src={categoryImages[index]} alt="" />
                   <span>{category}</span>
                 </div>

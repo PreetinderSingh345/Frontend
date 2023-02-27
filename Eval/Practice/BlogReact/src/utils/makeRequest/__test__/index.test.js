@@ -36,7 +36,7 @@ describe('makeRequest', () => {
     axios.mockClear();
   });
 
-  it('should make api call api call with appropriate request options and return response body when api endpoint and request body is specified', async () => {
+  it('should make api call with appropriate request options and return response body when api endpoint and request body is specified', async () => {
     axios.mockResolvedValue({ data: { data: { claps: 1 } } });
 
     expect(axios).not.toHaveBeenCalled();

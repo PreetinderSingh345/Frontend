@@ -8,10 +8,12 @@ function Sync({ setSync }) {
   }
 
   return (
-    <main id="sync">
+    <main id="sync" data-testid="sync">
       <span>:((</span>
       <span>seems a bit empty in here...</span>
-      <button onClick={handleClick} data-testid='sync-button'>sync</button>
+      <button onClick={handleClick} data-testid="sync-button">
+        sync
+      </button>
     </main>
   );
 }
